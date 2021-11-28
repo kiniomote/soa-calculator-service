@@ -33,7 +33,7 @@ namespace Lab1Api
                 options.AddPolicy(name: MainPolice,
                                   builder =>
                                   {
-                                      builder.WithOrigins("https://localhost:5001")
+                                      builder.WithOrigins("https://soa-calculator.herokuapp.com")
                                         .AllowAnyHeader()
                                         .AllowAnyMethod();
                                   });
